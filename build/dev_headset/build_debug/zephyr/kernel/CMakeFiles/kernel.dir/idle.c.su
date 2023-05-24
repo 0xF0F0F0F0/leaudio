@@ -1,0 +1,2 @@
+/home/this/ncs/zephyr/kernel/idle.c:20:6:z_pm_save_idle_exit	8	static
+/home/this/ncs/zephyr/kernel/idle.c:33:6:idle	8	static

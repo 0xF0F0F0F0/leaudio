@@ -1,0 +1,9 @@
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:681:19:z_impl_gpio_pin_configure	16	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:745:19:gpio_pin_configure_dt	8	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:1293:19:gpio_pin_set_raw	8	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:1333:19:gpio_pin_set	16	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/utils/board_version.c:107:12:board_version_init	40	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/utils/board_version.c:53:12:divider_value_get	8	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/utils/board_version.c:81:12:version_search	72	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/utils/board_version.c:140:5:board_version_get	8	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/utils/board_version.c:162:5:board_version_valid_check	152	dynamic,bounded

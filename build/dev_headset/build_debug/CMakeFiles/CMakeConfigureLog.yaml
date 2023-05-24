@@ -1,0 +1,183 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "/home/this/ncs/zephyr/cmake/modules/kernel.cmake:127 (project)"
+      - "/home/this/ncs/zephyr/cmake/modules/zephyr_default.cmake:117 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:46 (find_package)"
+    message: |
+      The target system is: Generic - 3.2.99 - arm
+      The host system is: Linux - 5.4.72-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/this/ncs/zephyr/cmake/modules/kernel.cmake:127 (project)"
+      - "/home/this/ncs/zephyr/cmake/modules/zephyr_default.cmake:117 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:46 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/this/ncs/zephyr/cmake/modules/kernel.cmake:127 (project)"
+      - "/home/this/ncs/zephyr/cmake/modules/zephyr_default.cmake:117 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:46 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/3.26.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/this/ncs/zephyr/cmake/modules/kernel.cmake:127 (project)"
+      - "/home/this/ncs/zephyr/cmake/modules/zephyr_default.cmake:117 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:46 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld: /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x34): undefined reference to `_exit'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/this/ncs/zephyr/cmake/modules/kernel.cmake:127 (project)"
+      - "/home/this/ncs/zephyr/cmake/modules/zephyr_default.cmake:117 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:46 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/3.26.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "/usr/share/cmake-3.26/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/home/this/ncs/zephyr/cmake/modules/kernel.cmake:133 (enable_language)"
+      - "/home/this/ncs/zephyr/cmake/modules/zephyr_default.cmake:117 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/this/ncs/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:46 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-zephyr-eabi-gcc (Zephyr SDK 0.16.0) 12.2.0
+      Copyright (C) 2022 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CheckIncludeFiles.cmake:137 (try_compile)"
+      - "/home/this/ncs/modules/hal/libmetal/libmetal/cmake/depends.cmake:33 (check_include_files)"
+      - "/home/this/ncs/modules/hal/libmetal/libmetal/CMakeLists.txt:24 (include)"
+    checks:
+      - "Looking for include file stdatomic.h"
+    directories:
+      source: "/home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-C6zsaG"
+      binary: "/home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-C6zsaG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/this/ncs/nrf/cmake/modules;/home/this/ncs/zephyr/cmake/modules;/home/this/ncs/modules/hal/libmetal/libmetal/cmake;/home/this/ncs/modules/hal/libmetal/libmetal/cmake/modules;/home/this/ncs/modules/hal/libmetal/libmetal/cmake/platforms"
+    buildResult:
+      variable: "HAVE_STDATOMIC_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-C6zsaG
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_c4345 && [1/2] /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -c -o CMakeFiles/cmTC_c4345.dir/HAVE_STDATOMIC_H.c.obj -c /home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-C6zsaG/HAVE_STDATOMIC_H.c
+        [2/2] : && /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -c  CMakeFiles/cmTC_c4345.dir/HAVE_STDATOMIC_H.c.obj -o cmTC_c4345   && :
+        arm-zephyr-eabi-gcc: warning: CMakeFiles/cmTC_c4345.dir/HAVE_STDATOMIC_H.c.obj: linker input file unused because linking not done
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.26/Modules/CheckIncludeFiles.cmake:137 (try_compile)"
+      - "/home/this/ncs/modules/lib/open-amp/open-amp/cmake/depends.cmake:15 (check_include_files)"
+      - "/home/this/ncs/modules/lib/open-amp/open-amp/CMakeLists.txt:25 (include)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "/home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-PPgzbD"
+      binary: "/home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-PPgzbD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall -Wextra"
+      CMAKE_MODULE_PATH: "/home/this/ncs/nrf/cmake/modules;/home/this/ncs/zephyr/cmake/modules;/home/this/ncs/modules/lib/open-amp/open-amp/cmake;/home/this/ncs/modules/lib/open-amp/open-amp/cmake/modules;/home/this/ncs/modules/lib/open-amp/open-amp/cmake/platforms"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-PPgzbD
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_d6f49 && [1/2] /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc   -Wall -Wextra -c -o CMakeFiles/cmTC_d6f49.dir/HAVE_FCNTL_H.c.obj -c /home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_headset/build_debug/CMakeFiles/CMakeScratch/TryCompile-PPgzbD/HAVE_FCNTL_H.c
+        [2/2] : && /home/this/zephyr-sdk-0.16.0/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -Wall -Wextra -c  CMakeFiles/cmTC_d6f49.dir/HAVE_FCNTL_H.c.obj -o cmTC_d6f49   && :
+        arm-zephyr-eabi-gcc: warning: CMakeFiles/cmTC_d6f49.dir/HAVE_FCNTL_H.c.obj: linker input file unused because linking not done
+        
+      exitCode: 0
+...

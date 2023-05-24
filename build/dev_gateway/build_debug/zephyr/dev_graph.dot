@@ -1,0 +1,28 @@
+// /home/this/ncs/nrf/applications/nrf5340_standard_audio/build/dev_gateway/build_debug/zephyr/zephyr_pre0.elf
+digraph "Device dependency graph" {
+	81 [label="clock@5000\nOrdinal: 81 | Handle: 1\n/soc/peripheral@50000000/clock@5000"]
+	32 [label="gpio@842800\nOrdinal: 32 | Handle: 2\n/soc/peripheral@50000000/gpio@842800"]
+	8 [label="gpio@842500\nOrdinal: 8 | Handle: 3\n/soc/peripheral@50000000/gpio@842500"]
+	122 [label="uart@8000\nOrdinal: 122 | Handle: 4\n/soc/peripheral@50000000/uart@8000"]
+	23 [label="ipc0\nOrdinal: 23 | Handle: 5\n/ipc/ipc0"]
+	80 [label="adc@e000\nOrdinal: 80 | Handle: 6\n/soc/peripheral@50000000/adc@e000"]
+	139 [label="i2c@9000\nOrdinal: 139 | Handle: 7\n/soc/peripheral@50000000/i2c@9000"]
+	129 [label="flash-controller@39000\nOrdinal: 129 | Handle: 8\n/soc/peripheral@50000000/flash-controller@39000"]
+	22 [label="mbox@2a000\nOrdinal: 22 | Handle: 9\n/soc/peripheral@50000000/mbox@2a000"]
+	144 [label="spi@a000\nOrdinal: 144 | Handle: 10\n/soc/peripheral@50000000/spi@a000"]
+	146 [label="sdhc@0\nOrdinal: 146 | Handle: 11\n/soc/peripheral@50000000/spi@a000/sdhc@0"]
+	147 [label="mmc\nOrdinal: 147 | Handle: 12\n/soc/peripheral@50000000/spi@a000/sdhc@0/mmc"]
+	140 [label="ina231@40\nOrdinal: 140 | Handle: 13\n/soc/peripheral@50000000/i2c@9000/ina231@40"]
+	141 [label="ina231@41\nOrdinal: 141 | Handle: 14\n/soc/peripheral@50000000/i2c@9000/ina231@41"]
+	143 [label="ina231@45\nOrdinal: 143 | Handle: 15\n/soc/peripheral@50000000/i2c@9000/ina231@45"]
+	142 [label="ina231@44\nOrdinal: 142 | Handle: 16\n/soc/peripheral@50000000/i2c@9000/ina231@44"]
+	149 [label="hs_0\nOrdinal: 149 | Handle: 17\n/soc/peripheral@50000000/usbd@36000/hs_0"]
+	8 -> 144
+	139 -> 141
+	139 -> 143
+	139 -> 140
+	139 -> 142
+	22 -> 23
+	144 -> 146
+	146 -> 147
+}

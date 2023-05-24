@@ -1,0 +1,14 @@
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:977:19:gpio_port_get	16	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:1432:19:gpio_add_callback	8	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:66:13:on_button_debounce_timeout	0	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:1245:19:gpio_pin_get	16	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:681:19:z_impl_gpio_pin_configure	16	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:1409:20:gpio_init_callback	8	static
+/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:596:19:z_impl_gpio_pin_interrupt_configure	16	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:92:12:pin_msk_to_pin	64	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:75:12:pin_to_btn_idx	40	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:118:13:button_isr	200	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:225:12:cmd_print_all_btns	24	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:237:12:cmd_push_btn	104	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:157:5:button_pressed	16	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/button_handler.c:184:5:button_handler_init	48	static

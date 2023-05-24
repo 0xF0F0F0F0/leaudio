@@ -1,0 +1,2 @@
+/home/this/ncs/zephyr/subsys/bluetooth/audio/cap_acceptor.c:24:5:bt_cap_acceptor_register	96	dynamic,bounded
+/home/this/ncs/zephyr/subsys/bluetooth/audio/cap_acceptor.c:59:6:bt_cap_acceptor_ccid_exist	0	static

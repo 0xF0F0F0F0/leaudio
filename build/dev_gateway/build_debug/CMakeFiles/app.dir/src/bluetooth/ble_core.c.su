@@ -1,0 +1,11 @@
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:40:13:net_core_timeout_handler	88	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:175:13:net_core_watchdog_handler	8	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:87:12:ble_core_le_lost_notify_enable	8	static
+/home/this/ncs/zephyr/include/zephyr/bluetooth/addr.h:231:19:bt_addr_le_to_str	64	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:79:13:mac_print	88	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:154:12:controller_leds_mapping	8	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:194:5:net_core_ctrl_version_get	24	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:180:13:work_net_core_ctrl_version_get	168	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:93:13:on_bt_ready	200	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:213:5:ble_core_le_pwr_ctrl_disable	8	static
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/bluetooth/ble_core.c:218:5:ble_core_init	104	dynamic,bounded

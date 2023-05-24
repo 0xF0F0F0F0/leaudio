@@ -1,0 +1,4 @@
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/audio/sw_codec_select.c:23:5:sw_codec_encode	2056	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/audio/sw_codec_select.c:103:5:sw_codec_decode	2072	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/audio/sw_codec_select.c:201:5:sw_codec_uninit	128	dynamic,bounded
+/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/audio/sw_codec_select.c:244:5:sw_codec_init	112	dynamic,bounded
