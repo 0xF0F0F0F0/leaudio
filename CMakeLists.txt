@@ -72,7 +72,7 @@ zephyr_library_include_directories(
 )
 
 zephyr_library_include_directories(app PRIVATE
-    ${ZEPHYR_NRF_MODULE_DIR}/boards/arm/nrf5340_std_dk)
+    ${CMAKE_CURRENT_LIST_DIR}/boards/nrf5340_std_dk)
 
 # Application sources
 add_subdirectory(src/audio)
@@ -108,3 +108,5 @@ if ((CONFIG_AUDIO_DFU EQUAL 1) OR (CONFIG_AUDIO_DFU EQUAL 2))
         ${BLE5_CTR_SIGN_STEP}
     )
 endif()
+
+

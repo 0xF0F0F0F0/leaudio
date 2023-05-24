@@ -1,5 +1,0 @@
-/home/this/ncs/nrf/boards/arm/nrf5340_std_dk/nrf5340_audio_dk_cpunet_reset.c:101:13:remoteproc_mgr_config	0	static
-/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:681:19:z_impl_gpio_pin_configure	16	static
-/home/this/ncs/zephyr/include/zephyr/drivers/gpio.h:745:19:gpio_pin_configure_dt	8	static
-/home/this/ncs/nrf/boards/arm/nrf5340_std_dk/nrf5340_audio_dk_cpunet_reset.c:28:12:core_config	112	static
-/home/this/ncs/nrf/boards/arm/nrf5340_std_dk/nrf5340_audio_dk_cpunet_reset.c:113:12:remoteproc_mgr_boot	8	static

@@ -1,8 +1,0 @@
-/home/this/ncs/modules/hal/nordic/nrfx/hal/nrf_clock.h:786:24:nrf_clock_is_running	8	static
-/home/this/ncs/modules/hal/nordic/nrfx/drivers/include/nrfx_clock.h:331:25:nrfx_clock_hfclk_is_running	16	static
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/main.c:96:12:bonding_clear_check	40	static
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/main.c:146:6:on_ble_core_ready	56	dynamic,bounded
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/main.c:43:12:hfclock_config_and_start	8	static
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/main.c:115:12:channel_assign_check	16	static
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/main.c:62:12:leds_set	16	static
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/main.c:160:6:main	384	dynamic,bounded

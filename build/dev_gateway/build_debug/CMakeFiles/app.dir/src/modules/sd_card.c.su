@@ -1,4 +1,0 @@
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/sd_card.c:33:5:sd_card_list_files	464	dynamic,bounded
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/sd_card.c:91:5:sd_card_write	416	static
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/sd_card.c:139:5:sd_card_read	416	static
-/home/this/ncs/nrf/applications/nrf5340_standard_audio/src/modules/sd_card.c:183:5:sd_card_init	136	dynamic,bounded

@@ -1,4 +1,0 @@
-/home/this/ncs/zephyr/kernel/sem.c:41:5:z_impl_k_sem_init	0	static
-/home/this/ncs/zephyr/kernel/sem.c:86:6:z_impl_k_sem_give	16	static
-/home/this/ncs/zephyr/kernel/sem.c:117:5:z_impl_k_sem_take	32	static
-/home/this/ncs/zephyr/kernel/sem.c:151:6:z_impl_k_sem_reset	16	static

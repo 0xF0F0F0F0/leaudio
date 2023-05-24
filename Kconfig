@@ -13,7 +13,7 @@ if NRF5340_AUDIO
 config AUDIO_DEV
 	int "Select which device type to compile for. 1=HEADSET or 2=GATEWAY"
 	range 1 2
-	default 2
+	default 1
 	help
 	  Setting this variable to 1 selects that the project is compiled
 	  as a HEADSET device.
@@ -22,7 +22,7 @@ config AUDIO_DEV
 choice NRF5340_AUDIO_TRANSPORT_MODE
 	prompt "Choose BIS or CIS for ISO transport"
 	default TRANSPORT_CIS if WALKIE_TALKIE_DEMO
-	default TRANSPORT_BIS
+	default TRANSPORT_CIS
 
 config TRANSPORT_BIS
 	bool "Use BIS (Broadcast Isochronous Stream)"

@@ -1,6 +1,0 @@
-/home/this/ncs/zephyr/include/zephyr/drivers/i2c.h:1025:19:i2c_write	24	static
-/home/this/ncs/zephyr/include/zephyr/drivers/i2c.h:1119:19:i2c_write_read	32	static
-/home/this/ncs/zephyr/include/zephyr/drivers/i2c.h:1205:19:i2c_burst_read_dt	24	static
-/home/this/ncs/zephyr/drivers/sensor/ina23x/ina23x_common.c:11:5:ina23x_reg_read_24	16	static
-/home/this/ncs/zephyr/drivers/sensor/ina23x/ina23x_common.c:26:5:ina23x_reg_read_16	16	static
-/home/this/ncs/zephyr/drivers/sensor/ina23x/ina23x_common.c:41:5:ina23x_reg_write	16	static
