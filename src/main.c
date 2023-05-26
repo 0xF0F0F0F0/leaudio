@@ -84,10 +84,10 @@ static int leds_set(void)
 		return ret;
 	}
 #elif (CONFIG_AUDIO_DEV == GATEWAY)
-	ret = led_on(LED_APP_RGB, LED_COLOR_GREEN);
-	if (ret) {
-		return ret;
-	}
+//	ret = led_on(LED_APP_RGB, LED_COLOR_GREEN);
+//	if (ret) {
+//		return ret;
+//	}
 #endif /* (CONFIG_AUDIO_DEV == HEADSET) */
 
 	return 0;
@@ -206,7 +206,6 @@ void main(void)
 		(void)k_sleep(K_MSEC(100));
 	}
 
-printk("\n---------------------------PASSSED!\n\n");
 	ret = leds_set();
 	ERR_CHK(ret);
 
@@ -215,8 +214,10 @@ printk("\n---------------------------PASSSED!\n\n");
 	ret = streamctrl_start();
 	ERR_CHK(ret);
 
+printk("\n---------------------------PASSSED!\n\n");
 	while (1) {
 		streamctrl_event_handler();
 		STACK_USAGE_PRINT("main", &z_main_thread);
+
 	}
 }
