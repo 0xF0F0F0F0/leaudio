@@ -22,7 +22,7 @@
 LOG_MODULE_REGISTER(button_handler, CONFIG_MODULE_BUTTON_HANDLER_LOG_LEVEL);
 
 /* How many buttons does the module support. Increase at memory cost */
-#define BUTTONS_MAX 5
+#define BUTTONS_MAX 4
 #define BASE_10 10
 
 static bool debounce_is_ongoing;
@@ -49,11 +49,6 @@ const static struct btn_config btn_cfg[] = {
 		.btn_pin = BUTTON_4,
 		.btn_cfg_mask = DT_GPIO_FLAGS(DT_ALIAS(sw3), gpios),
 	},
-	{
-		.btn_name = STRINGIFY(BUTTON_5),
-		.btn_pin = BUTTON_5,
-		.btn_cfg_mask = DT_GPIO_FLAGS(DT_ALIAS(sw4), gpios),
-	}
 };
 
 static const struct device *gpio_53_dev;

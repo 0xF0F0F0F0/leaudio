@@ -38,7 +38,7 @@ extern struct k_thread z_main_thread;
 #endif /* defined(CONFIG_INIT_STACKS) */
 
 static atomic_t ble_core_is_ready = (atomic_t) false;
-static struct board_version board_rev;
+//static struct board_version board_rev;
 
 static int hfclock_config_and_start(void)
 {
@@ -95,20 +95,20 @@ static int leds_set(void)
 
 static int bonding_clear_check(void)
 {
-	int ret;
-	bool pressed;
-
-	ret = button_pressed(BUTTON_5, &pressed);
-	if (ret) {
-		return ret;
-	}
-
-	if (pressed) {
-		if (IS_ENABLED(CONFIG_SETTINGS)) {
-			LOG_INF("Clearing all bonds");
-			bt_unpair(BT_ID_DEFAULT, NULL);
-		}
-	}
+//	int ret;
+//	bool pressed;
+//
+//	ret = button_pressed(BUTTON_5, &pressed);
+//	if (ret) {
+//		return ret;
+//	}
+//
+//	if (pressed) {
+//		if (IS_ENABLED(CONFIG_SETTINGS)) {
+//			LOG_INF("Clearing all bonds");
+//			bt_unpair(BT_ID_DEFAULT, NULL);
+//		}
+//	}
 	return 0;
 }
 
@@ -180,19 +180,18 @@ void main(void)
 	ret = fw_info_app_print();
 	ERR_CHK(ret);
 
-	ret = board_version_valid_check();
-	ERR_CHK(ret);
-
-	ret = board_version_get(&board_rev);
-	ERR_CHK(ret);
-
-	if (board_rev.mask & BOARD_VERSION_VALID_MSK_SD_CARD) {
-		ret = sd_card_init();
-		if (ret != -ENODEV) {
-			ERR_CHK(ret);
-		}
-	}
-
+//	ret = board_version_valid_check();
+//	ERR_CHK(ret);
+//
+//	ret = board_version_get(&board_rev);
+//	ERR_CHK(ret);
+//
+//	if (board_rev.mask & BOARD_VERSION_VALID_MSK_SD_CARD) {
+//		ret = sd_card_init();
+//		if (ret != -ENODEV) {
+//			ERR_CHK(ret);
+//		}
+//	}
 #if defined(CONFIG_AUDIO_DFU_ENABLE)
 	/* Check DFU BTN before Initialize BLE */
 	dfu_entry_check();
@@ -207,6 +206,7 @@ void main(void)
 		(void)k_sleep(K_MSEC(100));
 	}
 
+printk("\n---------------------------PASSSED!\n\n");
 	ret = leds_set();
 	ERR_CHK(ret);
 

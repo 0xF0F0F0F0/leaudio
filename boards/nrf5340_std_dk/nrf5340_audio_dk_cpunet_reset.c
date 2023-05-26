@@ -54,7 +54,7 @@ static int core_config(void)
 	}
 
 	/* Set on-board DSP/HW codec as default */
-	static const struct gpio_dt_spec hw_codec_sel =
+/*	static const struct gpio_dt_spec hw_codec_sel =
 		GPIO_DT_SPEC_GET(DT_NODELABEL(hw_codec_sel_out), gpios);
 
 	if (!device_is_ready(hw_codec_sel.port)) {
@@ -65,10 +65,10 @@ static int core_config(void)
 	ret = gpio_pin_configure_dt(&hw_codec_sel, GPIO_OUTPUT_LOW);
 	if (ret) {
 		return ret;
-	}
+	}*/
 
 	/* Pull the CS47L63 reset line to high (this pin is active low) */
-	static const struct gpio_dt_spec hw_codec_reset =
+/*	static const struct gpio_dt_spec hw_codec_reset =
 		GPIO_DT_SPEC_GET(DT_NODELABEL(hw_codec_reset_out), gpios);
 
 	if (!device_is_ready(hw_codec_reset.port)) {
@@ -79,10 +79,10 @@ static int core_config(void)
 	ret = gpio_pin_configure_dt(&hw_codec_reset, GPIO_OUTPUT_HIGH);
 	if (ret) {
 		return ret;
-	}
+	}*/
 
 	/* Disable board revision readback as default */
-	static const struct gpio_dt_spec board_id_en =
+/*	static const struct gpio_dt_spec board_id_en =
 		GPIO_DT_SPEC_GET(DT_NODELABEL(board_id_en_out), gpios);
 
 	if (!device_is_ready(board_id_en.port)) {
@@ -93,54 +93,49 @@ static int core_config(void)
 	ret = gpio_pin_configure_dt(&board_id_en, GPIO_OUTPUT_LOW);
 	if (ret) {
 		return ret;
-	}
+	}*/
 
 	return 0;
 }
 
 static void remoteproc_mgr_config(void)
 {
-	/* Route Bluetooth Controller Debug Pins */
-	DEBUG_SETUP();
+#if !defined(CONFIG_TRUSTED_EXECUTION_NONSECURE) || defined(CONFIG_BUILD_WITH_TFM)
+        /* Route Bluetooth Controller Debug Pins */
+        DEBUG_SETUP();
+#endif /* !defined(CONFIG_TRUSTED_EXECUTION_NONSECURE) || defined(CONFIG_BUILD_WITH_TFM) */
 
-	/* Retain nRF5340 Network MCU in Secure domain (bus
-	 * accesses by Network MCU will have Secure attribute set).
-	 */
-	NRF_SPU->EXTDOMAIN[0].PERM = 1 << 4;
+#if !defined(CONFIG_TRUSTED_EXECUTION_NONSECURE)
+        /* Retain nRF5340 Network MCU in Secure domain (bus
+         * accesses by Network MCU will have Secure attribute set).
+         */
+        NRF_SPU->EXTDOMAIN[0].PERM = 1 << 4;
+#endif /* !defined(CONFIG_TRUSTED_EXECUTION_NONSECURE) */
 }
-#endif /* !CONFIG_TRUSTED_EXECUTION_NONSECURE */
 
 static int remoteproc_mgr_boot(const struct device *dev)
 {
-	int ret;
+        ARG_UNUSED(dev);
 
-	ARG_UNUSED(dev);
-
-	ret = core_config();
-	if (ret) {
-		return ret;
-	}
-
-#if !defined(CONFIG_TRUSTED_EXECUTION_NONSECURE)
-	/* Secure domain may configure permissions for the Network MCU. */
-	remoteproc_mgr_config();
-#endif /* !CONFIG_TRUSTED_EXECUTION_NONSECURE */
+        /* Secure domain may configure permissions for the Network MCU. */
+        remoteproc_mgr_config();
 
 #if !defined(CONFIG_TRUSTED_EXECUTION_SECURE)
-	/*
-	 * Building Zephyr with CONFIG_TRUSTED_EXECUTION_SECURE=y implies
-	 * building also a Non-Secure image. The Non-Secure image will, in
-	 * this case do the remainder of actions to properly configure and
-	 * boot the Network MCU.
-	 */
+        /*
+         * Building Zephyr with CONFIG_TRUSTED_EXECUTION_SECURE=y implies
+         * building also a Non-Secure image. The Non-Secure image will, in
+         * this case do the remainder of actions to properly configure and
+         * boot the Network MCU.
+         */
 
-	/* Release the Network MCU, 'Release force off signal' */
-	NRF_RESET->NETWORK.FORCEOFF = RESET_NETWORK_FORCEOFF_FORCEOFF_Release;
+        /* Release the Network MCU, 'Release force off signal' */
+        NRF_RESET->NETWORK.FORCEOFF = RESET_NETWORK_FORCEOFF_FORCEOFF_Release;
 
-	LOG_DBG("Network MCU released.");
+        LOG_DBG("Network MCU released.");
 #endif /* !CONFIG_TRUSTED_EXECUTION_SECURE */
 
-	return 0;
+        return 0;
 }
+
 
 SYS_INIT(remoteproc_mgr_boot, POST_KERNEL, CONFIG_KERNEL_INIT_PRIORITY_DEVICE);

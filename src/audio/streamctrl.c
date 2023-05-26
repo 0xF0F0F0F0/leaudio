@@ -339,19 +339,19 @@ static void button_evt_handler(struct button_evt event)
 
 		break;
 
-	case BUTTON_5:
-#if (CONFIG_AUDIO_MUTE)
-		ret = le_audio_volume_mute();
-		if (ret) {
-			LOG_WRN("Failed to mute volume");
-		}
-#else
-		ret = le_audio_user_defined_button_press(LE_AUDIO_USER_DEFINED_ACTION_2);
-		if (ret) {
-			LOG_WRN("User defined button 5 action failed, ret: %d", ret);
-		}
-#endif
-		break;
+	//case BUTTON_5:
+//#if (CONFIG_AUDIO_MUTE)
+	//	ret = le_audio_volume_mute();
+	//	if (ret) {
+	//		LOG_WRN("Failed to mute volume");
+	//	}
+//#else
+	//	ret = le_audio_user_defined_button_press(LE_AUDIO_USER_DEFINED_ACTION_2);
+	//	if (ret) {
+	//		LOG_WRN("User defined button 5 action failed, ret: %d", ret);
+	//	}
+//#endif
+	//	break;
 
 	default:
 		LOG_WRN("Unexpected/unhandled button id: %d", event.button_pin);
